@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bdVaJa knPPhH"
+  className="sc-bwzfXH gHAAhV"
 >
   <div
-    className="sc-bwzfXH gokkPN"
+    className="sc-bdVaJa fVezFz"
   />
 </div>
 `;

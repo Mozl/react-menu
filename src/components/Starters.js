@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Starters from './Starters';
 
-const MenuWrapper = styled.div`
+const StartersWrapper = styled.div`
+  width: 50%;
   display: flex;
   border: 0.1rem solid black;
   flex-direction: column;
@@ -12,15 +12,11 @@ const MenuWrapper = styled.div`
   margin-top: 1rem;
 `;
 
-MenuWrapper.displayName = 'MenuWrapper';
+StartersWrapper.displayName = 'StartersWrapper';
 
-class Menu extends React.Component {
+class Starters extends React.Component {
   render() {
-    return (
-      <MenuWrapper>
-        <Starters />
-      </MenuWrapper>
-    );
+    return <StartersWrapper />;
   }
 }
-export default Menu;
+export default Starters;
