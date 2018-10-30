@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Menu from '../components/Menu';
 import renderer from 'react-test-renderer';
+import mount from 'enzyme';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -12,4 +13,9 @@ it('renders without crashing', () => {
 it('renders correctly', () => {
   const tree = renderer.create(<Menu />);
   expect(tree).toMatchSnapshot();
+});
+
+it('renders wrapper for menu', () => {
+  const wrapper = mount(<Menu />);
+  expect(wrapper.find('MenuWrapper').length).toEqual(1);
 });
