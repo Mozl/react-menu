@@ -2,31 +2,31 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="App"
+  className="sc-htpNat fLtbxA"
 >
-  <header
-    className="App-header"
+  <div
+    className="sc-bwzfXH gokkPN"
   >
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg"
-    />
-    <p>
-      Edit 
-      <code>
-        src/App.js
-      </code>
-       and save to reload.
-    </p>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
+    <div
+      className="sc-bdVaJa fVezFz"
     >
-      Learn React
-    </a>
-  </header>
+      Soup
+    </div>
+    <div
+      className="sc-bdVaJa fVezFz"
+    >
+      Pâté
+    </div>
+    <div
+      className="sc-bdVaJa fVezFz"
+    >
+      Bruschetta
+    </div>
+    <div
+      className="sc-bdVaJa fVezFz"
+    >
+      Prawn cocktail
+    </div>
+  </div>
 </div>
 `;

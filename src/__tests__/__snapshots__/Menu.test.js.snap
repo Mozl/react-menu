@@ -2,10 +2,31 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bwzfXH gHAAhV"
+  className="sc-htpNat fLtbxA"
 >
   <div
-    className="sc-bdVaJa fVezFz"
-  />
+    className="sc-bwzfXH gokkPN"
+  >
+    <div
+      className="sc-bdVaJa fVezFz"
+    >
+      Soup
+    </div>
+    <div
+      className="sc-bdVaJa fVezFz"
+    >
+      Pâté
+    </div>
+    <div
+      className="sc-bdVaJa fVezFz"
+    >
+      Bruschetta
+    </div>
+    <div
+      className="sc-bdVaJa fVezFz"
+    >
+      Prawn cocktail
+    </div>
+  </div>
 </div>
 `;

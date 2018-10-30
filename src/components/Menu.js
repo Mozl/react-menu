@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Starters from './Starters';
+import menuData from '../menu-data';
 
 const MenuWrapper = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ class Menu extends React.Component {
   render() {
     return (
       <MenuWrapper>
-        <Starters />
+        <Starters dishes={menuData} />
       </MenuWrapper>
     );
   }

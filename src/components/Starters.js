@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Dish from './Dish';
 
 const StartersWrapper = styled.div`
   width: 50%;
@@ -16,7 +17,14 @@ StartersWrapper.displayName = 'StartersWrapper';
 
 class Starters extends React.Component {
   render() {
-    return <StartersWrapper />;
+    const starters = this.props.dishes.starters;
+    return (
+      <StartersWrapper>
+        {starters.map(dish => (
+          <Dish key={dish.id} dishName={dish.name} />
+        ))}
+      </StartersWrapper>
+    );
   }
 }
 export default Starters;
