@@ -19,3 +19,8 @@ it('renders wrapper for menu', () => {
   const wrapper = shallow(<Menu />);
   expect(wrapper.find('MenuWrapper').length).toEqual(1);
 });
+
+it('renders starter block', () => {
+  const wrapper = shallow(<Menu />);
+  expect(wrapper.find('Starters').length).toEqual(1);
+});
