@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Menu from '../components/Menu';
 import renderer from 'react-test-renderer';
-import mount from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -16,6 +16,6 @@ it('renders correctly', () => {
 });
 
 it('renders wrapper for menu', () => {
-  const wrapper = mount(<Menu />);
+  const wrapper = shallow(<Menu />);
   expect(wrapper.find('MenuWrapper').length).toEqual(1);
 });
