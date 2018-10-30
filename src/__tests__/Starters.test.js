@@ -14,3 +14,8 @@ it('renders correctly', () => {
   const tree = renderer.create(<Starters />);
   expect(tree).toMatchSnapshot();
 });
+
+it('renders starter dishes', () => {
+  const wrapper = shallow(<Starters />);
+  expect(wrapper.find('StarterDish').length).toEqual(4);
+});
