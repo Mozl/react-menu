@@ -19,6 +19,7 @@ class Menu extends React.Component {
   render() {
     return (
       <MenuWrapper>
+        <h1>Menu</h1>
         <Starters dishes={menuData} />
       </MenuWrapper>
     );

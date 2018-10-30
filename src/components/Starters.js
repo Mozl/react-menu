@@ -20,6 +20,7 @@ class Starters extends React.Component {
     const starters = this.props.dishes.starters;
     return (
       <StartersWrapper>
+        <h2>Starters</h2>
         {starters.map(dish => (
           <Dish key={dish.id} dishName={dish.name} />
         ))}

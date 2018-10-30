@@ -1,44 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-menu
 
-## Available Scripts
+React-based food menu, following TDD practices
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+- `git clone` the repo to download the project files.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- In the terminal run: `npm install` to install all the dependencies for the project.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Run `npm run start` to get the app started.
 
-### `npm test`
+- Head to http://localhost:3000/ in the browser to see it.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Testing
 
-### `npm run build`
+Run `npm run test` to run the test suites.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Over the course of around 2 hours I followed strict TDD practices: writing the tests first, running them for red (failing test), writing minimal code for green (passing test) and refactoring. This included using Enzyme for snapshots. I ensured the styled components were given display names to allow the tests to recognise them and gave the components tested the correct props. All the tests are passing.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## My approach
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can see my approach clearly by looking at my commits in this repo. I started out by setting up a simple create-react-app project as I wanted to jump into development quickly. Following the TDD approach I created a tests folder and began building my first tests for the App and then the Menu components. Planning out the structure of the components I decided the Menu would be made up of components for each course type (starter, main, dessert). Each of these would be made up of individual Dish components to keep the project modular and maintain DRY code.
 
-### `npm run eject`
+## Due to time constraints
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If I had more time to work on this project I would continue my test-driven approach. Building out the features of the menu I would add click handlers to the dishes so they could be selected multiple times (for each person). Then continue to build out other features such as constraints on what each person can choose and giving a total price for the order as a whole. As the styling is simple I would like to improve the styling and ensure the app is mobile optimized for various device breakpoints.

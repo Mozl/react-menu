@@ -4,6 +4,9 @@ exports[`renders correctly 1`] = `
 <div
   className="sc-bwzfXH gokkPN"
 >
+  <h2>
+    Starters
+  </h2>
   <div
     className="sc-bdVaJa fVezFz"
   >
